@@ -1,0 +1,31 @@
+{
+  "name": "runform",
+  "version": "1.1.1",
+  "description": "FFT and IFFT",
+  "scripts": {
+    "build-commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir build-commonjs",
+    "build-es": "cross-env BABEL_ENV=es babel src --out-dir build-es"
+  },
+  "jsnext:main": "./build-es/index.js",
+  "main": "./build-commonjs/index.js",
+  "module": "./build-es/index.js",
+  "types": "./declarations/transforms.d.ts",
+  "keywords": [
+    "fft",
+    "ifft"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@types/node": "^14.14.22",
+    "cross-env": "^7.0.3"
+  },
+  "bugs": {
+    "url": "https://www.linkedin.com/in/yusufsaygili/"
+  },
+  "homepage": "https://www.linkedin.com/in/yusufsaygili/",
+  "deprecated": false,
+  "author": "Yusuf Saygili",
+  "license": "MIT"
+}
